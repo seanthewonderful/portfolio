@@ -12,7 +12,7 @@
 
   <!-- Favicons -->
   <link href="https://thumbs.dreamstime.com/b/s-f-initial-letter-logo-design-creative-modern-letters-vector-icon-illustration-173906612.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ url_for('static', filename='/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <script src="https://kit.fontawesome.com/55ae4f7d8d.js" crossorigin="anonymous"></script>
 
@@ -20,15 +20,15 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyResume - v4.7.0
@@ -89,7 +89,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/IMG_6312.png" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='/img/IMG_6312.png') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Python Developer &amp; Aspiring Engineer.</h3>
@@ -101,7 +101,7 @@
                 <ul>
                   <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>This is it</span></li> -->
                   <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Locations:</strong> <span>Saratoga Springs, UT • Mission Viejo, CA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Saratoga Springs, UT</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's</span></li>
                 </ul>
               </div>
@@ -120,7 +120,7 @@
               </div>
             </div>
             <p>
-              Check out this picture of my family! We love baseball, Knott's Berry Farm, computers, and playing in the dirt (except mom). Please reach out to connect!
+              Check out this picture of my family! We love baseball, Knott's Berry Farm, computers, and playing in the dirt (except mom).
             </p>
           </div>
         </div>
@@ -256,7 +256,7 @@
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Sean Fagan</h4>
-              <p><em>Former high school teacher, restaurant operating partner & district manager, and recent graduate of Devmountain bootcamp with emphasis in Python engineering. Highly motivated to learn new skills in and out of the workplace. Eager to contribute however possible to your business with a continual desire to gain the deepest understanding of coding principles and expand those skills rapidly.</em></p>
+              <p><em>Former high school teacher, restaurant operating partner & district manager, and recent Python Engineering graduate of Devmountain. Highly self-motivated and eager to contribute however possible to your business with a continual desire to gain the deepest understanding of coding principles and expand those skills rapidly.</em></p>
               <ul>
                 <li>CA, NV, UT, OH, WI, TX</li>
                 <li>(949) 292-4665</li>
@@ -301,7 +301,7 @@
               <ul>
                 <li>Created all lesson plans, grading rubrics, and exams aside from district/state mandated tests.</li>
                 <li>Improved teaching methods and approaches to enhance student learning in weekly collaborative department meetings.</li>
-                <li>Managed classrooms with an extremely wide spectrum of students. Struggling to adapt and influence students throughout this spectrum taught more about adolescents, accountability, motivation, and teaching method implementation than any course or instruction could.</li>
+                <li>Managed classrooms with an extremely wide spectrum of students. Adapted to variety of adolescent behaviors, tailoring strategies for improving accountability and motivation with new teaching methods.</li>
                 <li>Managed all practices and games for junior-varsity soccer team, winning first-place in the district both years.</li>
                 <li>Founded the “Film Club” where we screened and discussed a different classic film after school each week.</li>
               </ul>
@@ -336,13 +336,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Eating Disneyland - A Guide to Eating Around the Parks</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="{{ url_for('static', filename='/img/portfolio/portfolio-1.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('project1') }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -657,7 +657,7 @@
               <div class="address" style="margin-top:40px;">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Saratoga Springs, UT • Mission Viejo, CA</p>
+                <p>Saratoga Springs, UT</p>
               </div>
 
               <div class="email">
@@ -742,18 +742,18 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{ url_for('static', filename='/vendor/purecounter/purecounter.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/typed.js/typed.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 
