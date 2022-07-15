@@ -62,7 +62,15 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Sean Fagan</h1>
-      <p><span class="typed" data-typed-items="Developer, Teacher, Dad, Critical Thinker, Aspiring Machine Learning Expert, Future Space Traveler, Golfer"></span></p>
+      <p><span class="typed" data-typed-items="Developer, Teacher, Critical Thinker, Aspiring Machine Learning Expert, Future Space Traveler, Golfer"></span></p>
+      <p class="py-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40vh"/> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="40vh"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40vh"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="40vh"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="40vh"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40vh"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40vh"/>
+      </p>
       <div class="social-links">
         <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
         <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
@@ -576,85 +584,151 @@
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Testimonials I Wish I Could Have</h2>
-        </div>
+      <ul class="nav nav-tabs" id="testimonialTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active border border-2 border-bottom-0" id="have-tab" data-bs-toggle="tab" data-bs-target="#have-pane" type="button" role="tab" aria-controls="have-pane" aria-selected="true"><strong>Testimonials I have</strong></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border border-2 border-bottom-0" id="wish-have-tab" data-bs-toggle="tab" data-bs-target="#wish-have-pane" type="button" role="tab" aria-controls="wish-have-pane" aria-selected="true"><strong>Testimonials I Wish I Had</strong></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="testimonialTab">
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="https://nypost.com/wp-content/uploads/sites/2/2013/08/tvw_breaking_bad-300x300.jpg?quality=75&strip=all" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Better Call Saul! Inc.</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  My client is not now, nor has ever been guilty of sloth or slouching on the job. And you can take that to the bank. 
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="https://pbs.twimg.com/profile_images/74188698/NeilTysonOriginsA-Crop_400x400.jpg" class="testimonial-img" alt="">
-                <h3>Neil Degrasse Tyson</h3>
-                <h4>Hayden Planetarium</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Sean is one who knows the meaning of 'keep looking up'.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="http://canadiem.org/wp-content/uploads/2012/03/20120307-1353061.jpg" class="testimonial-img" alt="">
-                <h3>Morpheus</h3>
-                <h4>Captain of Nebuchadnezzar</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Sean took both pills and Neo is still looking for him.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="https://img.women.com/images/images/000/178/737/square/screens_shot_0006635.jpg?1555307529" class="testimonial-img" alt="">
-                <h3>Ron Swanson</h3>
-                <h4>Director, Parks & Recreation</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I wish you the best of luck hiring Sean, but I believe luck is a concept created by the weak to explain their failures.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="https://www.whitehouse.gov/wp-content/uploads/2021/01/35_john_f_kennedy.jpg" class="testimonial-img" alt="">
-                <h3>John F. Kennedy</h3>
-                <h4>35th U.S. President</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Ask not what your country can do for you - ask what Sean can do for you.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
+        <div class="container tab-pane fade show active py-3" id="have-pane" role="tabpanel" aria-labelledby="have-tab" tabindex="0" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Testimonials I Have</h2>
           </div>
-          <div class="swiper-pagination"></div>
+  
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="https://media-exp2.licdn.com/dms/image/C5603AQHa-P92RA2i5w/profile-displayphoto-shrink_800_800/0/1621964915116?e=1663200000&v=beta&t=mDwRGrURBqOz96BGpcL3TNgREDIYwL4JrgrZtbTdGvI" class="testimonial-img" alt="">
+                  <h3>Jedidiah Hwang</h3>
+                  <h4>Coding Bootcamp Instructor and Full Stack Developer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    As Sean's direct instructor, his progress as my student for 16 weeks surpassed those of his peers. He's very resourceful, independent, yet recognizes his limits and will seek assistance when situations arise.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="https://media-exp2.licdn.com/dms/image/C4E03AQGIO4AN8riAaw/profile-displayphoto-shrink_800_800/0/1629072210268?e=1663200000&v=beta&t=qPaf92pOGsBmxZ61ttni2PoLfwPhAwUlhbay0yI79g0" class="testimonial-img" alt="">
+                  <h3>Chalon Hutson</h3>
+                  <h4>Python Software Developer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Sean put in a lot of work to learn the core skills of Python software development in a very short time! His <a href="https://www.eatingdisneyland.com" target="_blank" class="link-primary">capstone</a> demonstrate a solid understanding of core Python concepts and knowledge.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <!-- <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="http://canadiem.org/wp-content/uploads/2012/03/20120307-1353061.jpg" class="testimonial-img" alt="">
+                  <h3>Morpheus</h3>
+                  <h4>Captain of Nebuchadnezzar</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Sean took both pills and Neo is still looking for him.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div> -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
         </div>
-
+        <!-- Second Pane -->
+        <div class="container tab-pane fade py-3" id="wish-have-pane" role="tabpanel" aria-labelledby="wish-have-tab" tabindex="0" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Testimonials I Wish I Could Have</h2>
+          </div>
+  
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="https://nypost.com/wp-content/uploads/sites/2/2013/08/tvw_breaking_bad-300x300.jpg?quality=75&strip=all" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Better Call Saul! Inc.</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    My client is not now, nor has ever been guilty of sloth or slouching on the job. And you can take that to the bank. 
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="https://www.gannett-cdn.com/-mm-/700343ac21203d446aa4da8f9cedf6824338d71c/c=0-567-3000-2262/local/-/media/2015/11/12/Nashville/Nashville/635829188956903515-NAS-Neil-deGrasse-Tyson.jpg" class="testimonial-img img-fluid" alt="">
+                  <h3>Neil Degrasse Tyson</h3>
+                  <h4>Hayden Planetarium</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Sean is one who knows the meaning of 'keep looking up'.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="http://canadiem.org/wp-content/uploads/2012/03/20120307-1353061.jpg" class="testimonial-img" alt="">
+                  <h3>Morpheus</h3>
+                  <h4>Captain of Nebuchadnezzar</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Sean took both pills and Neo is still looking for him.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="https://img.women.com/images/images/000/178/737/square/screens_shot_0006635.jpg?1555307529" class="testimonial-img" alt="">
+                  <h3>Ron Swanson</h3>
+                  <h4>Director, Parks & Recreation</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I wish you the best of luck hiring Sean, but I believe luck is a concept created by the weak to explain their failures.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="https://www.whitehouse.gov/wp-content/uploads/2021/01/35_john_f_kennedy.jpg" class="testimonial-img" alt="">
+                  <h3>John F. Kennedy</h3>
+                  <h4>35th U.S. President</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Ask not what your country can do for you - ask what Sean can do for you.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
+
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
